@@ -118,16 +118,11 @@ class App extends Component {
 
   genericImageSelector(pageStartIndex, pageLastIndex) {
     const { imageData } = this.state;
-    this.setState(
-      {
-        pageStart: pageStartIndex,
-        pageLast: pageLastIndex,
-        currentPage: imageData.slice(pageStartIndex, pageLastIndex)
-      },
-      () => {
-        console.log(pageStartIndex);
-      }
-    );
+    this.setState({
+      pageStart: pageStartIndex,
+      pageLast: pageLastIndex,
+      currentPage: imageData.slice(pageLastIndex - 9, pageLastIndex)
+    });
   }
 
   render() {
