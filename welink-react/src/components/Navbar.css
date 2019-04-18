@@ -1,0 +1,8 @@
+.navbar-light .navbar-nav .nav-link.active {
+  color: #2196f3;
+}
+
+.slogan {
+  margin: 0;
+  padding: 8px;
+}

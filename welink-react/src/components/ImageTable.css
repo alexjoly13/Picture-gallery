@@ -1,3 +1,17 @@
 img {
-  width: 60%;
+  width: 80%;
+}
+
+.image-infos  {
+  width: 80%;
+  border: 2px solid black;
+}
+
+.image-name {
+  margin: 2% 0 0% 0;
+  font-size: 1.75rem;
+}
+
+.description {
+  font-style: italic;
 }

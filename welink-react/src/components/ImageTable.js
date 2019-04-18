@@ -7,19 +7,18 @@ class ImageTable extends Component {
 
     return (
       <section className="articles-table-page">
-        <div className="GridView container-fluid">
+        <div className="container-fluid">
           <div className="row">
-            {imageArray.map(oneImage => {
+            {imageArray.map((oneImage, index) => {
               return (
-                <div className="col-4 myCol p-0 image-size">
-                  <div className="square">
-                    <img
-                      src={oneImage.pictureUrl}
-                      // className={`square-img ${oneContact.style}`}
-                      alt="image2"
-                    />
+                <div className="col-4 p-0" key={index}>
+                  <div>
+                    <img src={oneImage.pictureUrl} alt="Some Pic" />
                   </div>
-                  <h3 className="title-card">{oneImage.name}</h3>
+                  <div className="image-infos">
+                    <h3 className="image-name">{oneImage.name}</h3>
+                    <p className="description">Category: {oneImage.category}</p>
+                  </div>
                 </div>
               );
             })}
