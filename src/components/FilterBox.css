@@ -11,6 +11,10 @@
   margin-right: 3%;
 }
 
+.filter-descr {
+  margin-bottom: 10%;
+}
+
 .switch {
   position: relative;
   display: inline-block;

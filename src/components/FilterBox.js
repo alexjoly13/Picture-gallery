@@ -9,7 +9,7 @@ class FilterBox extends Component {
         <h2 className="title">Feel free to browse ImageDigger !</h2>
         <form className="form-block">
           <li className="list-group-item">
-            Sports
+            <span className="filter-descr">Sports</span>
             <label className="switch ">
               <input
                 type="checkbox"
@@ -22,7 +22,7 @@ class FilterBox extends Component {
             </label>
           </li>
           <li className="list-group-item">
-            Nature
+            <span className="filter-descr">Nature</span>
             <label className="switch ">
               <input
                 type="checkbox"
@@ -35,7 +35,7 @@ class FilterBox extends Component {
             </label>
           </li>
           <li className="list-group-item">
-            Cars
+            <span className="filter-descr">Cars</span>
             <label className="switch ">
               <input
                 type="checkbox"
