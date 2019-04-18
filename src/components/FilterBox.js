@@ -15,7 +15,7 @@ class FilterBox extends Component {
                 type="checkbox"
                 className="primary"
                 checked={this.props.filters.sports}
-                onChange={event => this.props.onBox(event)}
+                onChange={event => this.props.boxChecking(event)}
                 name="sports"
               />
               <span className="slider round" />
@@ -28,7 +28,7 @@ class FilterBox extends Component {
                 type="checkbox"
                 className="primary"
                 checked={this.props.filters.nature}
-                onChange={event => this.props.onBox(event)}
+                onChange={event => this.props.boxChecking(event)}
                 name="nature"
               />
               <span className="slider round" />
@@ -41,40 +41,12 @@ class FilterBox extends Component {
                 type="checkbox"
                 className="primary"
                 checked={this.props.filters.cars}
-                onChange={event => this.props.onBox(event)}
+                onChange={event => this.props.boxChecking(event)}
                 name="cars"
               />
               <span className="slider round" />
             </label>
           </li>
-
-          {/* <label className="checkbox">
-            <input
-              type="checkbox"
-              checked={this.props.filters.sports}
-              onChange={event => this.props.onBox(event)}
-              name="sports"
-            />
-            <p className="category">Sports</p>
-          </label>
-          <label className="checkbox">
-            <input
-              type="checkbox"
-              checked={this.props.filters.nature}
-              onChange={event => this.props.onBox(event)}
-              name="nature"
-            />
-            <p className="category">Nature</p>
-          </label>
-          <label className="checkbox">
-            <input
-              type="checkbox"
-              checked={this.props.filters.cars}
-              onChange={event => this.props.onBox(event)}
-              name="cars"
-            />
-            <p className="category">Cars</p>
-          </label> */}
         </form>
       </section>
     );

@@ -66,7 +66,7 @@ class App extends Component {
     );
   }
 
-  genericSwitch(event) {
+  genericNavToggler(event) {
     const { name } = event.target;
     const { filters } = this.state;
     var updatedFilter = [];
@@ -128,10 +128,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar onLink={event => this.genericSwitch(event)} />
+        <Navbar linksMenu={event => this.genericNavToggler(event)} />
         <FilterBox
           filters={this.state.filters}
-          onBox={event => this.genericOnChange(event)}
+          boxChecking={event => this.genericOnChange(event)}
         />
         <ImageTable imageData={this.state.currentPage} />
         <Pagination

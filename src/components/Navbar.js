@@ -33,7 +33,7 @@ class Navbar extends Component {
                   className="nav-link"
                   name="sports"
                   to="/sports"
-                  onClick={event => this.props.onLink(event)}
+                  onClick={event => this.props.linksMenu(event)}
                 >
                   Sports
                 </NavLink>
@@ -43,7 +43,7 @@ class Navbar extends Component {
                   className="nav-link"
                   name="nature"
                   to="/nature"
-                  onClick={event => this.props.onLink(event)}
+                  onClick={event => this.props.linksMenu(event)}
                 >
                   Nature
                 </NavLink>
@@ -53,7 +53,7 @@ class Navbar extends Component {
                   className="nav-link"
                   name="cars"
                   to="/cars"
-                  onClick={event => this.props.onLink(event)}
+                  onClick={event => this.props.linksMenu(event)}
                 >
                   Cars
                 </NavLink>
