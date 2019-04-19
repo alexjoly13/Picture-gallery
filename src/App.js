@@ -44,8 +44,8 @@ class App extends Component {
           },
           () => {
             const { categories } = this.state;
-            const selection = sourceData.filter(oneContact => {
-              return categories.includes(oneContact.category);
+            const selection = sourceData.filter(oneImage => {
+              return categories.includes(oneImage.category);
             });
 
             this.setState(
@@ -95,8 +95,8 @@ class App extends Component {
           },
           () => {
             const { categories } = this.state;
-            const selection = sourceData.filter(oneContact => {
-              return categories.includes(oneContact.category);
+            const selection = sourceData.filter(oneImage => {
+              return categories.includes(oneImage.category);
             });
             this.setState(
               {
